@@ -1,0 +1,9 @@
+URL:
+  New: "http://ec2-3-214-0-142.compute-1.amazonaws.com/Core/Login"
+  
+HomePage:
+   Username: "//input[@type='text']"
+   Loginbutton: "//button[@value='Login']"
+   
+      
+      
