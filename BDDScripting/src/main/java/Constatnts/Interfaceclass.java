@@ -1,0 +1,22 @@
+package Constatnts;
+
+interface Printable{  
+void print();  
+}  
+interface Showable{  
+void show();  
+}  
+class Interfaceclass implements Printable,Showable{  
+public void print(){
+	System.out.println("Hello");
+}  
+public void show(){
+	System.out.println("Welcome");
+}  
+  
+public static void main(String args[]){  
+	Interfaceclass obj = new Interfaceclass();  
+obj.print();  
+obj.show();  
+ }  
+} 
