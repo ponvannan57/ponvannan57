@@ -20,7 +20,6 @@ public class Selenium {
 		js.executeScript("document.getElementById('user_password').value='password';");
 		js.executeScript("document.getElementById('user_submit').click();");
 		
-		
 		d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		String Filename = "\\C\\reports\\Screenshots\\";
