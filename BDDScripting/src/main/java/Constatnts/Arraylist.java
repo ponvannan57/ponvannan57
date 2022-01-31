@@ -17,8 +17,7 @@ public class Arraylist {
 				AL.add(Array[i]);
 				
 			}
-			
-			
+		
 		}
 			System.out.println(AL);
 	}

@@ -1,8 +1,12 @@
 package Constatnts;
 
 abstract class Bike2{  
+	
+	static {
+		System.out.println("Static block");
+	}
 	   Bike2(){
-		   System.out.println("bike is created");
+		   System.out.println("Const");
 		   }  
 	   abstract void run();  
 	   void changeGear(){
@@ -17,8 +21,9 @@ abstract class Bike2{
 	//Creating a Test class which calls abstract and non-abstract methods  
 	 class Abstratctnewclass{  
 	 public static void main(String args[]){  
-	  Bike2 obj = new Honda();  
+	  Bike2 obj = new Honda(); 
+	  Honda obj1 = new Honda(); 
 	  obj.run();  
-	  obj.changeGear();  
+	  obj.changeGear();    
 	 }  
 	}

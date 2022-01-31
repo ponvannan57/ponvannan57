@@ -9,7 +9,7 @@ public class duplicatearrayprogram {
 		String [] Str = {"Java", "JSP", "Servlets", "Java", "Struts", "JSP", "JDBC"
 				, "Servlets", "Java", "Struts", "JSP"};
 		
-		HashMap<String,Integer> HM = new HashMap<String,Integer>();
+		ArrayList<String> AL = new ArrayList<String>();
 		
 		for(int i=0;i<Str.length-1;i++) {
 			
@@ -17,26 +17,13 @@ public class duplicatearrayprogram {
 				
 				if(Str[i].equals(Str[j]) && (i!=j)) {
 					
-					System.out.println("The Duplicate Element is : "+Str[j]);
+					AL.add(Str[j]);
 					
-					if(HM.containsKey(Str[i])) {
-						
-						HM.put(Str[i], HM.get(Str[i])+1);
-						
-					}
-					
-					else{
-						HM.put(Str[i], 1);
-					}
 					
 				}
-				
 			}
-			
 		}
-		
-		System.out.println(HM);
-
+		System.out.println(AL);
 	}
 
 }

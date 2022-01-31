@@ -13,7 +13,7 @@ public class arraycomparision {
 			
 			for(int i=0;i<A2.length;i++) {
 				
-				if(Arrays.asList(A1).contains(A2[i])) {
+				if(!Arrays.asList(A1).contains(A2[i])) {
 					
 					AL.add(A2[i]);
 				}
