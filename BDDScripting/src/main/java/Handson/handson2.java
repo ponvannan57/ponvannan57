@@ -7,68 +7,26 @@ import java.io.*;
 
 public class handson2 {
 	
-	static boolean parenthesis (String S) {
-		
-		Deque<Character> DQ = new ArrayDeque<Character>();
-		
-		for(int i=0;i<S.length();i++) {
-			
-			if(S.charAt(i)=='{' || S.charAt(i)=='(' || S.charAt(i)=='[') {
-				
-				DQ.push(S.charAt(i));
-				continue;
-				
-			}
-			
-			if(DQ.isEmpty()) {
-				return false;
-			}
-			
-			char c;
-			
-			switch(S.charAt(i)) {
-			
-			case'}':
-				c=DQ.pop();
-				if(c=='(' || c=='[') {
-					return false;
-				}
-				break;
-			case')':
-				c=DQ.pop();
-				if(c=='{' || c=='[') {
-					return false;
-				}
-				break;
-			case']':
-				c=DQ.pop();
-				if(c=='(' || c=='{') {
-					return false;
-				}
-				break;
-			
-			}
-			
-		}	
-	
-		return true;
-		
-	}
-	
 
 	public static void main(String[] args) {
-		
-		String S ="{}[({)]{";
-		
-		if(parenthesis(S)) {
-			
-			System.out.println("Balanced");
-			
-		}
-		
-		else {
-			System.out.println("Not Balanced");
-		}
+		String[] list = {"my_purchases", "account_menu", "auth", "base"};
+        String[] checked = {"404", "account_menu", "auth", "base", "dashboard_base", "dashboard_menu", "fiveohthree", "footer", "header", "header_menu", "listings_menu"};
+        
+        ArrayList <String> AL = new ArrayList<String>();
+        
+        for(int i=0;i<checked.length;i++) {
+        	if(!Arrays.asList(list).contains(checked[i])) {
+        		AL.add(checked[i]);
+        		
+        		
+        	}
+        	
+        }
+        
+        
+        System.out.println(AL);
+        
+        
 	}
 }
 

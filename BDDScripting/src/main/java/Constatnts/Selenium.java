@@ -34,7 +34,22 @@ public class Selenium {
 		
 		WebDriverWait wait = new WebDriverWait(d,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
-	
+		
+		d.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+		
+		
+//		git config –global user.name “[name]”  
+//		git init [repository name]
+//		git clone [url]  
+//		git add [file]  
+//		git add *
+//		git commit -m “[ Type in the commit message]”  
+//		git checkout [branch name] 
+//		git merge [branch name]  
+//		git pull [Repository Link]
+//		git push [variable name] master  
+		
+		
 		Actions Act = new Actions(d);
 		
 		WebElement element = null;
