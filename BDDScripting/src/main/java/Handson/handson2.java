@@ -9,24 +9,29 @@ public class handson2 {
 	
 
 	public static void main(String[] args) {
-		String[] list = {"my_purchases", "account_menu", "auth", "base"};
-        String[] checked = {"404", "account_menu", "auth", "base", "dashboard_base", "dashboard_menu", "fiveohthree", "footer", "header", "header_menu", "listings_menu"};
-        
-        ArrayList <String> AL = new ArrayList<String>();
-        
-        for(int i=0;i<checked.length;i++) {
-        	if(!Arrays.asList(list).contains(checked[i])) {
-        		AL.add(checked[i]);
-        		
-        		
-        	}
-        	
-        }
-        
-        
-        System.out.println(AL);
-        
-        
+		
+		String S = "&^$&^$(&^jbeekljb5454)(_)(jebnflkjer4564(*^)(^";
+		
+		HashMap <Character,Integer> HM = new HashMap<Character,Integer>();
+		
+		for(int i=0;i<S.length();i++) {
+			
+			if(!(S.charAt(i)>=65 && S.charAt(i) <= 90) || 
+					!(S.charAt(i)>=97 && S.charAt(i) <= 122)) {
+				
+				if(HM.containsKey(S.charAt(i))) {
+					
+					HM.put(S.charAt(i), HM.get(S.charAt(i))+1);
+					
+				}
+				
+				else
+					HM.put(S.charAt(i), 1);
+				
+			}
+			
+		}
+		System.out.println(HM);
 	}
 }
 

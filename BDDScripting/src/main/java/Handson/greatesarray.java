@@ -4,7 +4,7 @@ public class greatesarray {
 
 	public static void main(String[] args) {
 		
-		int[] A = {100,120,1,3,88,65,99,121,13};
+		int[] A = {122,120,1,3,88,65,99,121,13};
 		
 		int Max = A[0];
 		int Smax=Integer.MIN_VALUE;
