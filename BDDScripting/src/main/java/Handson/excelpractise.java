@@ -18,7 +18,6 @@ public class excelpractise {
 		char c;
 		
 		int L =S.length()-1;
-		int r=L-1;
 		
 		while(L>=0) { 
 		
