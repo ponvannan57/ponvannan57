@@ -25,7 +25,7 @@ public class excelpractise {
 			S1+=c;
 			L--;
 			}
-		
+	
 	
 		
 		System.out.println(S1);
